@@ -1,0 +1,16 @@
+body{
+    font-size: 18px;
+    color: red;
+}
+
+.tituloGeneral{
+    width: 400px;
+    background-color: blue;
+    font-size: 24px;
+}
+
+#miDiv{
+    width: 50%;
+    height: 300px;
+    border: black dashed thin;
+}
