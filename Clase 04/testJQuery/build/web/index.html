@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script src="js/jquery-3.3.1.js" type="text/javascript"></script>
+        <script>
+            $(document).ready(function(){
+                //$('.textoGeneral:last').css('color', 'red');
+                $('#campoTexto').val('ejemplo de valor 1245');
+                $('.textoGeneral').find('a').css('color', 'red');
+                $('#botonSaludar').on('click', function(){
+                   //$('#miDiv').html('<b> Hola! </br>');
+                   $('#miDiv').remove();
+                });
+            });
+            
+            
+        </script>
+        
+    </head>
+    <body>
+        <button id="botonSaludar" type="button"> Saludar </button>
+        <input type="text" id="campoTexto">
+        <div id="miDiv">TODO write content</div>
+        <p> Hola1 </p>
+        <p> Hola2 </p>
+        <p class="{textoGeneral">
+            Hola3
+            <a href="www.google.com"> Ir a google </a>
+        </p>
+        <p class="textoGeneral"> Hola4</p>
+        
+    </body>
+</html>

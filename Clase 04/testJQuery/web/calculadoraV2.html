@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>Calculadora</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script src="js/jquery-3.3.1.js" type="text/javascript"></script>
+        <script>
+            $(document).ready(function () {
+
+                $('#calculo').on('click', function () {
+                    var num1 = $('#numero1').val();
+                    var num2 = $('#numero2').val();
+                    var total=0;
+                    var operacion= $('#selectOperacion').val();
+                    if(operacion == "sumar"){
+                         total = parseInt(num1) + parseInt(num2);
+                    }else if(operacion == "restar"){
+                         total = parseInt(num1) - parseInt(num2);
+                    }
+                    
+                    $('#total').val(total);
+                });
+            });
+        </script>
+    </head>
+    <body>
+        <div>
+            <input type="number" id="numero1">
+        </div>
+        <div>
+            <input type="number" id="numero2">
+        </div>
+        <div>
+            <select id="selectOperacion">
+                <option value="sumar"> Sumar </option>
+                <option value="restar"> Restar </option>
+            </select>
+            <button type="submit" id="calculo"> Calcular</button>
+        </div>
+
+        <div>
+            <input type="text" id="total" readonly>
+        </div>
+
+
+    </body>
+</html>

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script src="js/jquery-3.3.1.js" type="text/javascript"></script>
+        <script src="js/jquery-ui.js" type="text/javascript"></script>
+        <script src="js/jquery.validate.js" type="text/javascript"></script>
+        <script src="js/messages_es_AR.js" type="text/javascript"></script>
+        <link href="css/jquery-ui.css" rel="stylesheet" type="text/css"/>
+        
+        <script>
+            $(document).ready(function(){
+               $('#ejemploForm').validate();               
+            });
+            
+            
+        </script>
+       
+            
+    </head>
+    <body>
+        <form method="POST" action="test.jsp" id="ejemploForm">
+            Email <input type="text" class="email required"> <br>
+            Sueldo <input type="text" class="number required"> <br>
+            <button type="submit"> Enviar Datos </button>
+        </form>
+    </body>
+</html>
